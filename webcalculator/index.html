@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/logic.js"></script>
+    <title>Calculator</title>
+</head>
+<body class="main">
+<h1>Web Calculator</h1>
+
+<div id="container">
+    <div id="calculator">
+        <div id="inputbox">
+            <input type="text" class="form-control" id="inputValue">
+        </div>
+        <div id="resultbox">
+            <input type="text" class="form-control" id="resultValue">
+        </div>
+        <div id="grid">
+            <div class="keys"><button type="button" class="btn btn-success" onclick="buttonPress('7')">7</button></div>
+            <div class="keys"><button type="button" class="btn btn-success" onclick="buttonPress('8')">8</button></div>
+            <div class="keys"><button type="button" class="btn btn-success" onclick="buttonPress('9')">9</button></div>
+            <div class="keys"><button type="button" class="btn btn-success" onclick="operation('/')">/</button></div>
+            <div class="keys"><button type="button" class="btn btn-success" onclick="buttonPress('4')">4</button></div>
+            <div class="keys"><button type="button" class="btn btn-success" onclick="buttonPress('5')">5</button></div>
+            <div class="keys"><button type="button" class="btn btn-success" onclick="buttonPress('6')">6</button></div>
+            <div class="keys"><button type="button" class="btn btn-success" onclick="operation('*')">*</button></div>
+            <div class="keys"><button type="button" class="btn btn-success" onclick="buttonPress('1')">1</button></div>
+            <div class="keys"><button type="button" class="btn btn-success" onclick="buttonPress('2')">2</button></div>
+            <div class="keys"><button type="button" class="btn btn-success" onclick="buttonPress('3')">3</button></div>
+            <div class="keys"><button type="button" class="btn btn-success" onclick="buttonPress('-')">-</button></div>
+            <div class="keys"><button type="button" class="btn btn-success" onclick="buttonPress('.')">.</button></div>
+            <div class="keys"><button type="button" class="btn btn-success" onclick="buttonPress('0')">0</button></div>
+            <div class="keys"><button type="button" class="btn btn-success" onclick="operation('+')">+</button></div>
+            <div class="keys"><button type="button" class="btn btn-success" onclick="operation('**')">**</button></div>
+            <div class="keys"><button type="button" class="btn btn-success" onclick="operation('sqrt')">sqrt</button></div>
+            <div class="keys"><button type="button" class="btn btn-success" onclick="operation('DEL')">DEL</button></div>
+            <div class="keys"><button type="button" class="btn btn-success" onclick="operation('C')">C</button></div>
+            <div class="equalskey"><button type="button" class="btn btn-success" onclick="operation('=')">=</button></div>
+            <!--<div class="equalskey"><button type="button" class="btn btn-success" onclick="buttonPress('(')">(</button></div>-->
+            <!--<div class="equalskey"><button type="button" class="btn btn-success" onclick="buttonPress(')')">)</button></div>-->
+        </div>
+
+    </div>
+    <div id="history">
+        <h2>
+            HISTORY
+        </h2>
+        <div>
+            <table class="table table-inverse" id="historyTable">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Calulation</th>
+                    <th>Result</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td id="value1"></td>
+                    <td id="result1"></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td id="value2"></td>
+                    <td id="result2"></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td id="value3"></td>
+                    <td id="result3"> </td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td id="value4"></td>
+                    <td id="result4"> </td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td id="value5"></td>
+                    <td id="result5"> </td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td id="value6"></td>
+                    <td id="result6"> </td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td id="value7"></td>
+                    <td id="result7"> </td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td id="value8"></td>
+                    <td id="result8"></td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td id="value9"></td>
+                    <td id="result9"> </td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td id="value10"></td>
+                    <td id="result10"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success" id="erasehistorybtn" onclick="eraseHistory()">Erase History</button>
+        </div>
+
+    </div>
+
+
+</div>
+</body>
+</html>

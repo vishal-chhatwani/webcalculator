@@ -1,0 +1,122 @@
+.main{
+
+    background-color: #0c0e0d;
+
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
+
+h2{
+    text-align: center;
+    color: rgba(7,18,20,0.83);
+    font-weight: bold;
+    font-family: "Adobe Devanagari";
+}
+
+#container{
+    display: block;
+    width: 100%;
+    height: 90%;
+    background-color: aqua;
+    border: double;
+}
+
+#calculator{
+    border: double;
+    border-width: thick;
+    position: absolute;
+    left: 40%;
+    top: 25%;
+    outline: auto ;
+    width: 310px;
+    height: 480px;
+    float: right;
+    outline-width: 2px;
+    outline-color: white;
+}
+
+#inputValue{
+
+    height: 50px;
+    background-color: rgba(228,224,255,0.83);
+    font-size: x-large;
+    border-radius: 0 !important;
+}
+
+#resultValue{
+
+    height: 50px;
+    background-color: #94adbc;
+    font-size: xx-large;
+    text-align: right;
+    border-radius: 0 !important;
+}
+
+.keys {
+    /*outline: 1px solid white;*/
+
+    float: left;
+    height: 74px;
+    width: 73px;
+}
+
+.equalskey{
+    /*outline: 1px solid white;*/
+
+    float: left;
+    height: 74px;
+    width: 73px;
+    font-size: xx-large;
+}
+
+#grid{
+padding: 5px;
+    left: auto;
+}
+.btn{
+
+    height: 95%;
+    width: 95%;
+    text-align: center;
+    font-size: x-large;
+    border-radius: 0 !important;
+
+
+}
+
+.btn:hover{
+    background-color: rgba(127, 144, 255, 0.83);
+
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    border:none !important;
+}
+
+#history{
+    float: left;
+    margin-top: 50px;
+    top: 35%;
+    width: 350px;
+    height: 600px;
+    margin-left: 20px;
+    background-color: rgba(253, 255, 243, 0.83);
+}
+
+#historyTable{
+    font-size: medium;
+
+}
+
+#erasehistorybtn{
+
+    width: 100%;
+    height: 50px;
+    font-size: x-large;
+    font-weight: bolder;
+}
